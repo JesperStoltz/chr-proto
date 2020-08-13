@@ -1,0 +1,82 @@
+#CharacterSheet {
+    color: white;
+    min-height: 100vh;
+}
+
+#Character_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#Character_header h1 {
+    margin: 0px;
+    font-family: Neverwinter;
+}
+
+#Character_header h5 {
+    margin: 0px;
+}
+
+#CharacterSheet #Character_stats table {
+    width: 100%;
+}
+
+#CharacterSheet #Character_stats table thead {
+    width: 100%;
+}
+
+#CharacterSheet #Character_stats table th {
+    text-align: center;
+}
+
+#CharacterSheet #Character_stats table td {
+    text-align: center;
+}
+
+#CharacterSheet #Character_spells table {
+    width: 100%;
+}
+
+#CharacterSheet #Character_spells table thead {
+    width: 100%;
+}
+
+#CharacterSheet #Character_spells table th {
+    text-align: center;
+}
+
+.main_td {
+    width: 480px;
+}
+
+.check_td {
+    text-align: center;
+}
+
+#CharacterSheet #Character_spells table hr {
+    width: 100%;   
+}
+
+#CharacterSheet #Character_inventory table {
+    width: 100%;
+}
+
+#CharacterSheet #Character_inventory table thead {
+    width: 100%;
+}
+
+#CharacterSheet #Character_inventory table th {
+    text-align: center;
+}
+
+#CharacterSheet #Character_inventory table td {
+    /* text-align: center; */
+}
+
+#HP_input {
+    width: 50px;
+    background: black;
+    color: white;
+}

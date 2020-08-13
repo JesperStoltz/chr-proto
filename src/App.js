@@ -1,24 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CreateCharacter from "./Components/CreateCharacter/CreateCharacter";
+import DMPlan from "./Components/DMPlan/DMPlan";
+import CharacterSheet from "./Components/CharacterSheet/CharacterSheet";
 import './App.css';
 
-function App() {
+const App = () => {
+  const [DM, setDM] = useState(false);
+  const [player, setPlayer] = useState(false);
+  const [character, setCharacter] = useState({});
+  const [ready2play, setReady2Play] = useState(false);
+
+  const updateCharacter = (newChar) => {
+    setCharacter(newChar);
+  }
+  const updateReady2Play = (boolean) => {
+    setReady2Play(boolean)
+  }
+
+  if (ready2play) {
+    return (
+      <div id="App">
+        <CharacterSheet character={character} />
+      </div>
+    )
+  }
+
+  if (DM) {
+    return (
+      <div id="App">
+        <div id="Button_container">
+          <button onClick={() => { setPlayer(false); setDM(true); }}>DM</button>
+          <button onClick={() => { setDM(false); setPlayer(true); }}>Player</button>
+        </div>
+        <DMPlan />
+      </div>
+    )
+  }
+
+  if (player) {
+    return (
+      <div id="App">
+        <CreateCharacter updateCharacter={updateCharacter} updateReady2Play={updateReady2Play} />
+      </div>
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <div id="Button_container">
+        <button onClick={() => { setPlayer(false); setDM(true); }}>DM</button>
+        <button onClick={() => { setDM(false); setPlayer(true); }}>Player</button>
+      </div>
     </div>
   );
 }

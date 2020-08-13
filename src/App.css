@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: Neverwinter;
+  src: url('./Fonts/Neverwinter.otf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+#App {
   min-height: 100vh;
+  background: url("./images/bg.png");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#Button_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Button_container button{
+  background-image: url("./images/button.png");
+  background-size: cover;
+  width: 237px;
+  height: 68px;
+  margin: 10px;
+  font-family: Neverwinter;
+  color: #c4c419;
+  font-size: 31px;
+}
+
+#App form {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+#App form label {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

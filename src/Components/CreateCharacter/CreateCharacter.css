@@ -1,0 +1,11 @@
+#CreateCharacter {
+    color: white;
+}
+
+#CreateCharacter form {
+    width: 80vw;
+}
+
+#Information_container {
+    text-align: justify;
+}
