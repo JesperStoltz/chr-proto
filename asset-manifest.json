@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/chr-proto/static/css/main.af02244a.chunk.css",
+    "main.js": "/chr-proto/static/js/main.9fd2e0ef.chunk.js",
+    "main.js.map": "/chr-proto/static/js/main.9fd2e0ef.chunk.js.map",
+    "runtime-main.js": "/chr-proto/static/js/runtime-main.0ceeee58.js",
+    "runtime-main.js.map": "/chr-proto/static/js/runtime-main.0ceeee58.js.map",
+    "static/js/2.165208cc.chunk.js": "/chr-proto/static/js/2.165208cc.chunk.js",
+    "static/js/2.165208cc.chunk.js.map": "/chr-proto/static/js/2.165208cc.chunk.js.map",
+    "index.html": "/chr-proto/index.html",
+    "precache-manifest.bcf38b87b25057e1637bdac0650d84e9.js": "/chr-proto/precache-manifest.bcf38b87b25057e1637bdac0650d84e9.js",
+    "service-worker.js": "/chr-proto/service-worker.js",
+    "static/css/main.af02244a.chunk.css.map": "/chr-proto/static/css/main.af02244a.chunk.css.map",
+    "static/js/2.165208cc.chunk.js.LICENSE.txt": "/chr-proto/static/js/2.165208cc.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/chr-proto/static/media/button.3eba4ea5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ceeee58.js",
+    "static/js/2.165208cc.chunk.js",
+    "static/css/main.af02244a.chunk.css",
+    "static/js/main.9fd2e0ef.chunk.js"
+  ]
+}
