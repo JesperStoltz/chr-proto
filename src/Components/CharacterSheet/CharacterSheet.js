@@ -123,6 +123,7 @@ const CharacterSheet = (props) => {
         )
     });
 
+    
     useEffect(() => {
         let abilityArray = [];
         for (let ability in character.stats) {
